@@ -1,0 +1,11 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Adam Donahue -- alephaleph
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5
+    Django, Modernizr, Normalize.css, Bootstrap

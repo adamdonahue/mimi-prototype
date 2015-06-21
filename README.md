@@ -1,2 +1,2 @@
 # mimi-prototype
-Prototype of the Mimi chat application.
+Prototype of the Mimi web site.

@@ -1,13 +1,25 @@
 {% extends "pages/base.html" %}
 {% block content %}
-<h1>Mimi: Your Daily Beauty Ritual</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8">
+      <h1>Mimi: Your Daily Beauty Ritual</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-8">
+      <ul class="nav nav-tabs" role="navigation">
+        <li><a href="{% url "pages-acne-awareness" %}">Acne Awareness</a></li>
+        <li><a href="{% url "pages-celeb" %}">Celeb</a></li>
+        <li><a href="{% url "pages-hair" %}">Hair</a></li>
+        <li><a href="{% url "pages-nails" %}">Nails</a></li>
+        <li><a href="{% url "pages-makeup" %}">Makeup</a></li>
+        <li><a href="{% url "pages-skin" %}">Skin</a></li>
+      </ul>
+    </div>
+  </div>
+ {% block body %}
 
-<ul class="nav nav-tabs" role="navigation">
-  <li><a href="#">Acne Awareness</a></li>
-  <li><a href="#">Celeb</a></li>
-  <li><a href="#">Hair</a></li>
-  <li><a href="#">Nails</a></li>
-  <li><a href="#">Makeup</a></li>
-  <li><a href="#">Skin</a></li>
-</ul>
+ {% endblock body %}
+</div>
 {% endblock content %}

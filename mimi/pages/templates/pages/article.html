@@ -1,0 +1,17 @@
+{% extends "pages/index.html" %}
+{% block body %}
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>{{article.headline}}</h2>
+      <h3 class="subheadline">{{article.subheadline}}</h3>
+      <h4><img width="20" src="/media/{{article.author.photo}}" /> By {{article.author.display_name}}</h4>
+      <div class="content">
+        {% for paragraph in content %}
+          <p>{{paragraph}}</p>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock body %}

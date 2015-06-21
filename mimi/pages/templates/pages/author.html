@@ -1,0 +1,13 @@
+{% extends "pages/index.html" %}
+{% block body %}
+<div class="container">
+  <div class="row">
+    <div class="col-sm-2">
+      <img src="/media/{{ author.photo }}" />
+    </div>
+    <div class="col-sm-6">
+      <h2>{{ author.display_name }}</h2>
+    </div>
+  </div>
+</div>
+{% endblock body %}

@@ -38,6 +38,11 @@ class Article(models.Model):
 
 
 class ArticleTag(models.Model):
+    """A tag used to classify an article for a particular
+    interest.  This can be anything from subject to author
+    to publication.
+
+    """
     name = models.CharField(max_length=100, unique=True)
 
     def __unicode__(self):
@@ -46,7 +51,12 @@ class ArticleTag(models.Model):
     class Meta:
         db_table = 'article_tag'
 
+#### JOIN TABLES ####
+
 class ArticleArticleTag(models.Model):
+    """Many-to-many relationship between articles and tags.
+
+    """
     article = models.ForeignKey('Article', related_name='tags')
     tag = models.ForeignKey('ArticleTag', related_name='articles')
 
